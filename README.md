@@ -1,54 +1,123 @@
-# React + TypeScript + Vite
+# 🌦️ Clima API Consulta
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Consulta el clima actual de cualquier ciudad ingresando el nombre de la ciudad y el país. La aplicación muestra el estado actual del tiempo de manera clara y precisa.
 
-Currently, two official plugins are available:
+🔗 [Live Demo](https://clima-api-consulta.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+## 🌅 Vista previa
 
-## Expanding the ESLint configuration
+![Preview](./img-readme/clima-preview.png)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📚 Tecnologías utilizadas
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **React**: Librería principal para la creación de la interfaz de usuario.  
+- **TypeScript**: Tipado estático para mejorar la robustez y el mantenimiento del código.  
+- **Axios**: Cliente HTTP para realizar llamadas a la API de clima.  
+- **Custom Hook**: Para centralizar la lógica de consulta del clima.  
+- **useState y useMemo**: Gestión y optimización del estado.  
+- **Type Guards**, **Zod** y **Valibot**: Validación y manejo seguro de la respuesta de la API.  
+- **API KEY en Variables de Entorno**: Buenas prácticas para la gestión segura de claves.  
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ⚙️ Funcionalidades
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+| Funcionalidad                                | Descripción                                                                 |
+|----------------------------------------------|-----------------------------------------------------------------------------|
+| 🌍 Consulta de Clima                          | Permite ingresar la ciudad y el país para obtener el clima actual.            |
+| 📊 Visualización clara                        | Muestra el estado del clima de manera organizada y simple.                   |
+| 🔑 Seguridad de la API KEY                    | Almacenamiento seguro de la clave como variable de entorno.                  |
+| 🛠️ Validación de datos                        | Uso de Type Guards, Zod y Valibot para asegurar respuestas consistentes.      |
+| 🚀 Optimización del rendimiento               | Evita llamadas redundantes a la API usando useMemo.                          |
+
+---
+
+## 🚀 Instalación y uso
+
+1. Clona el repositorio:
+
+   ```bash
+   git clone https://github.com/tuusuario/clima-api-consulta.git
+   cd clima-api-consulta
+   ```
+2. Instala las dependencias:
+   ```bash
+   npm install
+3. Crea un archivo .env en la raíz del proyecto y añade tu API KEY:
+   ```bash
+     REACT_APP_API_KEY=tu_api_key
+    ```
+4. Inicia el servidor de desarrollo:
+   ```bash
+     npm run dev
+    ```
+5. Abre tu navegador y accede a:
+   ```bash
+     http://localhost:5173
+    ```
+
+
+
+---
+
+# 🌦️ Weather API Query
+
+Check the current weather of any city by entering the city name and country. The app clearly and accurately displays the current weather status.
+
+🔗 [Live Demo](https://clima-api-consulta.netlify.app/)
+
+---
+
+## 🌅 Preview
+
+![Preview](./img-readme/clima-preview.png)
+
+---
+
+## 📚 Technologies Used
+
+- **React**: Main library for building the user interface.  
+- **TypeScript**: Static typing to enhance code robustness and maintainability.  
+- **Axios**: HTTP client for making weather API calls.  
+- **Custom Hook**: To centralize the weather query logic.  
+- **useState and useMemo**: State management and performance optimization.  
+- **Type Guards**, **Zod**, and **Valibot**: Safe validation and handling of API responses.  
+- **API Key in Environment Variables**: Best practices for secure key management.  
+
+---
+
+## ⚙️ Features
+
+| Feature                                    | Description                                                              |
+|--------------------------------------------|--------------------------------------------------------------------------|
+| 🌍 Weather Query                           | Enter the city and country to get the current weather.                    |
+| 📊 Clear Visualization                     | Displays weather status in an organized and simple way.                   |
+| 🔑 API Key Security                        | Secure storage of the API key as an environment variable.                 |
+| 🛠️ Data Validation                        | Uses Type Guards, Zod, and Valibot to ensure consistent responses.         |
+| 🚀 Performance Optimization                | Avoids redundant API calls using useMemo.                                 |
+
+---
+
+## 🚀 Installation and Usage
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/weather-api-query.git
+   cd weather-api-query
+2. Install dependencies:
+   ```bash
+   npm install
+3. Create a .env file at the root of the project and add your API KEY:
+   ```bash
+     REACT_APP_API_KEY=tu_api_key
+    ```
+4. Start the development server:
+   ```bash
+     npm run dev
+    ```
+5. Open your browser and go to:
+   ```bash
+     http://localhost:5173
+    ```
