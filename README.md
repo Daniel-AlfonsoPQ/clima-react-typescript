@@ -56,7 +56,15 @@ Consulta el clima actual de cualquier ciudad ingresando el nombre de la ciudad y
    ```bash
      http://localhost:5173
     ```
+   
+## 🌟 Lecciones aprendidas
+Configuración y uso de variables de entorno en React para manejar claves de API de manera segura.
 
+Creación y uso de Custom Hooks para modularizar la lógica de consulta de datos.
+
+Validación efectiva de datos usando Type Guards, Zod y Valibot para garantizar la integridad de la información.
+
+Implementación de técnicas para mejorar el rendimiento en la renderización de componentes con useMemo.
 
 
 ---
@@ -121,3 +129,11 @@ Check the current weather of any city by entering the city name and country. The
    ```bash
      http://localhost:5173
     ```
+## 🌟 Lessons Learned
+Configuring and using environment variables in React for secure API key management.
+
+Creating and utilizing Custom Hooks to modularize query logic.
+
+Effective data validation using Type Guards, Zod, and Valibot to ensure data integrity.
+
+Implementing performance optimization techniques with useMemo for efficient rendering.
